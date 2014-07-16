@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D615761C19074F4B00BA9025 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D615761B19074F4B00BA9025 /* ItemDetailViewController.m */; };
 		D66FC09F18FE35610059D1E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66FC09E18FE35610059D1E2 /* Foundation.framework */; };
 		D66FC0A118FE35610059D1E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66FC0A018FE35610059D1E2 /* CoreGraphics.framework */; };
 		D66FC0A318FE35610059D1E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66FC0A218FE35610059D1E2 /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		D66FC0C018FE35610059D1E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66FC0A218FE35610059D1E2 /* UIKit.framework */; };
 		D66FC0C818FE35610059D1E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D66FC0C618FE35610059D1E2 /* InfoPlist.strings */; };
 		D66FC0CA18FE35610059D1E2 /* ChecklistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FC0C918FE35610059D1E2 /* ChecklistsTests.m */; };
+		D6C34C83190188B0001F24B2 /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C34C82190188B0001F24B2 /* ChecklistItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D615761A19074F4B00BA9025 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		D615761B19074F4B00BA9025 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
 		D66FC09B18FE35610059D1E2 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66FC09E18FE35610059D1E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D66FC0A018FE35610059D1E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		D66FC0C518FE35610059D1E2 /* ChecklistsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChecklistsTests-Info.plist"; sourceTree = "<group>"; };
 		D66FC0C718FE35610059D1E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D66FC0C918FE35610059D1E2 /* ChecklistsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistsTests.m; sourceTree = "<group>"; };
+		D6C34C81190188B0001F24B2 /* ChecklistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistItem.h; sourceTree = "<group>"; };
+		D6C34C82190188B0001F24B2 /* ChecklistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +118,11 @@
 		D66FC0A418FE35610059D1E2 /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				D6A6BE101901E56C00C6D14D /* Model */,
 				D66FC0AD18FE35610059D1E2 /* ChecklistsAppDelegate.h */,
 				D66FC0AE18FE35610059D1E2 /* ChecklistsAppDelegate.m */,
-				D66FC0B018FE35610059D1E2 /* Main.storyboard */,
-				D66FC0B318FE35610059D1E2 /* ChecklistsViewController.h */,
-				D66FC0B418FE35610059D1E2 /* ChecklistsViewController.m */,
+				D6A6BE111901E57800C6D14D /* View */,
+				D6A6BE121901E57E00C6D14D /* Controller */,
 				D66FC0B618FE35610059D1E2 /* Images.xcassets */,
 				D66FC0A518FE35610059D1E2 /* Supporting Files */,
 			);
@@ -150,6 +156,34 @@
 				D66FC0C618FE35610059D1E2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6A6BE101901E56C00C6D14D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6C34C81190188B0001F24B2 /* ChecklistItem.h */,
+				D6C34C82190188B0001F24B2 /* ChecklistItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D6A6BE111901E57800C6D14D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D66FC0B018FE35610059D1E2 /* Main.storyboard */,
+				D615761A19074F4B00BA9025 /* ItemDetailViewController.h */,
+				D615761B19074F4B00BA9025 /* ItemDetailViewController.m */,
+				D66FC0B318FE35610059D1E2 /* ChecklistsViewController.h */,
+				D66FC0B418FE35610059D1E2 /* ChecklistsViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D6A6BE121901E57E00C6D14D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +287,8 @@
 				D66FC0AB18FE35610059D1E2 /* main.m in Sources */,
 				D66FC0AF18FE35610059D1E2 /* ChecklistsAppDelegate.m in Sources */,
 				D66FC0B518FE35610059D1E2 /* ChecklistsViewController.m in Sources */,
+				D615761C19074F4B00BA9025 /* ItemDetailViewController.m in Sources */,
+				D6C34C83190188B0001F24B2 /* ChecklistItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +493,7 @@
 				D66FC0CF18FE35610059D1E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D66FC0D018FE35610059D1E2 /* Build configuration list for PBXNativeTarget "ChecklistsTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +502,7 @@
 				D66FC0D218FE35610059D1E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
